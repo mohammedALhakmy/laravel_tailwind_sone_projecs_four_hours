@@ -12,6 +12,7 @@
                     <tbody>
                     @unless($listings->isEmpty())
                         @foreach($listings as $listing)
+
                     <tr class="border-gray-300"
                     >
                         <td
@@ -21,6 +22,7 @@
                                 {{ $listing->title }}
                             </a>
                         </td>
+                        <td class="px-4 py-8 border-t border-b border-gray-300 text-lg">   <x-listing-tag  :tagsCsv="$listing->tags"/></td>
                         <td
                             class="px-4 py-8 border-t border-b border-gray-300 text-lg"
                         >

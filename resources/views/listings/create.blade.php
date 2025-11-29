@@ -1,5 +1,5 @@
 <x-layout>
-<x-card class="p-10 rounded max-w-lg mx-auto mt-10">
+{{--<x-card class="p-10 rounded max-w-lg mx-auto mt-10">--}}
 
     <header class="text-center">
         <h2 class="text-2xl font-bold uppercase mb-1">
@@ -23,7 +23,7 @@
             />
 
             @error('company')
-                <p class="text-red-500 text-sm mt-1 ">{{ $message }}</p>
+                <p class="text-dan text-sm mt-1 ">{{ $message }}</p>
             @enderror
         </div>
 
@@ -170,5 +170,5 @@
             <a href="/" class="text-black ml-4"> Back </a>
         </div>
     </form>
-</x-card>
+{{--</x-card>--}}
 </x-layout>

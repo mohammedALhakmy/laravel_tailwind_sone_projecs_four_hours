@@ -123,3 +123,17 @@ Route::get('/search',function (Request $request){
 //   dd($request);
     return($request->name.' '.$request->ages);
 });
+
+
+//================= Test
+
+Route::get('/hi',function(){
+    return response("<span class='bg-black-500 text-red-500'>Hi Mistar Ali<span>",200);
+});
+
+Route::get('laptop/{id}', function ($id) {
+    return response('Post :' .$id);
+})->where('id','[0-9]+');
+
+
+ 
